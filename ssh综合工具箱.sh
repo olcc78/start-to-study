@@ -514,7 +514,7 @@ fi
 }
 # 运行统计
 sum_run_times() {
-  local COUNT=$(curl -s -m 2 "https://count.eooce.dpdns.org/?url=https://raw.githubusercontent.com/eooce/ssh_tool/main/ssh_tool.sh") &&
+  local COUNT=$(curl -s -m 2 "https://raw.githubusercontent.com/olcc78/start-to-study/refs/heads/main/ssh%E7%BB%BC%E5%90%88%E5%B7%A5%E5%85%B7%E7%AE%B1.sh") &&
   TODAY=$(echo "$COUNT" | sed -n 's/.*"daily_count": \([0-9]\+\).*/\1/p') &&
   TOTAL=$(echo "$COUNT" | sed -n 's/.*"total_count": \([0-9]\+\).*/\1/p')
 }
