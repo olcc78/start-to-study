@@ -15,9 +15,6 @@ skyblue='\e[1;96m'
 # 创建快捷指令
 create_shortcut() {
     wrapper_content='#!/bin/bash
-# 在线获取最新脚本并执行
-SCRIPT_URL="https://raw.githubusercontent.com/eooce/ssh_tool/main/ssh_tool.sh"
-TEMP_SCRIPT="/tmp/ssh_tool_latest.sh"
 
 # 下载最新脚本（屏蔽输出）
 if curl -fsSL "$SCRIPT_URL" -o "$TEMP_SCRIPT" >/dev/null 2>&1; then
